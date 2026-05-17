@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+	<title>David Delgado | Gallery Page</title>
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+
+		/* header of page */
+		#header {
+			background-image: url("img/london-header.jpg");
+			background-position: center;
+			background-size: cover;
+
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+
+		h1 {
+			font-family: "BebasNeue-Regular";
+			color: #FFF;
+			text-align: center;
+			font-size: 3em;
+			text-shadow: 0px 0px 5px #000;
+		}
+
+        h2 {
+			font-family: "BebasNeue-Regular", sans-serif;
+			font-size: 2em;
+			margin-top: 30px;
+		}
+
+		#container {
+			/* centered on the page */
+            display: flex;
+			width: 1000px;
+			
+			background-color: white;
+			padding: 15px;
+            flex-wrap: wrap;
+		}
+
+        .container-gallery {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row; 
+			width: 100%;
+			margin: auto; 
+			padding: 15px;
+		}
+
+		.container-gallery2 {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row; 
+			width: 50%;
+			padding: 0px;
+		}
+
+		.gallery-image-long{
+			width: 473px; 
+			height: 200px; 
+			margin: 5px;
+			border: 1px solid black;
+			background-color: lightgray;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.gallery-image-long > img{
+			width: 100%; 
+			height: 100%;
+			object-fit: cover;
+			object-position: 0px -110px;
+		}
+
+		.gallery-image-small {
+			width: 230px; 
+			height: 200px; 
+			margin: 5px;
+			border: 1px solid black;
+			background-color: lightgray;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.gallery-image-small > img{
+			width: 100%; 
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		.gallery-image-large {
+			width: 473px; 
+			height: 412px; 
+			margin: 5px;
+			border: 1px solid black;
+			background-color: lightgray;
+			position: relative;
+		}
+
+		.gallery-image-large > img {
+			width: 100%; 
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.gallery-image-extra-long{
+			width: 716px; 
+			height: 200px; 
+			margin: 5px;
+			border: 1px solid black;
+			background-color: lightgray;
+			position: relative;
+		}
+
+		.gallery-image-extra-long > img{
+			width: 100%; 
+			height: 100%;
+			object-fit: cover;
+			object-position: 0px -405px;
+		}
+		
+		#top-menu ul {
+			position: absolute;
+			display: none;
+		}
+
+		.caption {
+			font-size: 1em;
+			text-align: center;
+			background-color: black;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			padding-top: 90px;
+			visibility: hidden;
+		}
+
+		.gallery-image-large .caption {
+			font-size: 1em;
+			text-align: center;
+			background-color: black;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			padding-top: 190px;
+			visibility: hidden;
+		}
+
+		.gallery-image-long:hover .caption{
+			visibility: visible;
+		}
+
+		.gallery-image-small:hover .caption{
+			visibility: visible;
+		}
+
+		.gallery-image-large:hover .caption{
+			visibility: visible;
+		}
+
+		.gallery-image-extra-long:hover .caption{
+			visibility: visible;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- #header -->
+
+	<div id = "navbar">
+		<ul id="top-menu">
+			<li><a href="interest.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>	
+	</div> <!-- #navbar -->
+
+	
+    <div id = "page-wrapper"> 
+        <div id="container">
+
+            <h2> Images</h2>
+
+            <div class = "container-gallery">
+
+				<div class="gallery-image-long">
+					<img src="img/berlin_bar.jpg" alt="Berlin Bar">
+					<div class = "caption"> 
+						Berlin Icebar
+					</div>
+				</div>
+
+				<div class="gallery-image-small">
+					<img src="img/tower.jpg" alt="Berlin TV Tower">
+					<div class = "caption"> 
+						Berlin TV Tower
+					</div>
+				</div>
+
+				<div class="gallery-image-small">
+					<img src="img/palace.jpg" alt="Palace">
+					<div class = "caption"> 
+						Entrance to Charlottenburg Palace
+					</div>
+				</div>
+
+				<div class = "container-gallery2">
+					
+					<div class="gallery-image-small">
+						<img src="img/berlin_food.jpg" alt="Berlin Food">
+						<div class = "caption"> 
+						Cake and Ice Cream Dessert
+						</div>
+					</div>
+
+					<div class="gallery-image-small">
+						<img src="img/berlin_food2.jpg" alt="Berlin Food 2">
+						<div class = "caption"> 
+						Ethiopian Injera Dish
+						</div>
+					</div>
+
+					<div class="gallery-image-small">
+						<img src="img/indian_food.jpg" alt="Indian Food">
+						<div class = "caption"> 
+						Indian Dinner
+						</div>
+					</div>
+
+					<div class="gallery-image-small">
+						<img src="img/prague_food.jpg" alt="Prague Food">
+						<div class = "caption"> 
+						Vepřo Knedlo Zelo Dish
+						</div>
+					</div>
+
+				</div> <!-- .container-gallery2 -->
+
+				<div class = "gallery-image-large">
+					<img src="img/london_night.jpg" alt="London Night">
+					<div class = "caption"> 
+					View of Tower Bridge From The Shard
+					</div>
+				</div>
+
+				<div class = "gallery-image-extra-long">
+					<img src="img/london_gallery.jpg" alt="London Gallery">
+					<div class = "caption"> 
+					The National Gallery, London
+					</div>
+				</div>
+
+				<div class = "gallery-image-small">
+					<img src="img/berlin_street.jpg" alt="Berlin Street">
+					<div class = "caption"> 
+					Zalabia Snack
+					</div>
+				</div>
+
+            </div> <!-- .container-gallery -->
+
+        </div> <!-- #container -->
+
+    </div> <!-- #page-wrapper -->
+
+
+	<div id="footer">
+		University of Southern California &copy; 2026
+	</div> <!-- #footer -->
+
+</body>
+
+</html>

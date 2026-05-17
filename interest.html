@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+	<title>David Delgado | Interest Page</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+	<style>
+
+		/* header of page */
+		#header {
+			background-image: url("img/berlin.jpg");
+			background-position: center;
+			background-size: cover;
+
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+
+		h1 {
+			font-family: "BebasNeue-Regular", sans-serif;
+			font-weight: bold;
+			color: #FFF;
+			text-align: center;
+			font-size: 3em;
+			text-shadow: 0px 0px 5px #000;
+		}
+
+		#container {
+			/* centered on the page */
+			width: 800px;
+			
+			background-color: white;
+			padding: 15px;
+		}
+
+		h2 {
+			font-family: "BebasNeue-Regular", sans-serif;
+			font-size: 2em;
+			margin-top: 50px;
+		}
+
+		#berlin-wall {
+			width: 200px;
+			height: auto;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #000;
+		}
+
+		h3 {
+			font-family: "BebasNeue-Regular", sans-serif;
+			font-size: 2em;
+			margin-top: 50px;
+		}
+
+		#prague {
+			width: 200px;
+			height: auto;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #000;
+		}
+
+		h4 {
+			font-family: "BebasNeue-Regular", sans-serif;
+			font-size: 2em;
+			margin-top: 50px;
+		}
+
+		#london {
+			width: 200px;
+			height: auto;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #000;
+		}
+
+		#exhibit-list ul {
+			font-family: "Rouge Script", cursive;
+			font-size: 1.4em;
+		}
+
+		#sidebar {
+			background-color: lightgrey;
+			padding: 15px;
+			width: 250px;
+		}
+
+		.sidebar-gallery {
+			display: flex;
+			flex-direction: column; 
+			width: 200px;
+			margin: auto; 
+			padding: 15px;
+			align-items: center;
+		}
+
+		.sidebar-image{
+			width: 200px; 
+			height: 270px; 
+			margin: 100px;
+			margin-bottom: 120px;
+			border: 1px solid black;
+			background-color: lightgray;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.sidebar-image > img{
+			width: 100%; 
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.caption {
+			font-size: 1em;
+			text-align: center;
+			background-color: black;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			padding-top: 130px;
+			visibility: hidden;
+		}
+
+		.sidebar-image:hover .caption{
+			visibility: visible;
+		}
+
+		.sub-menu {
+			position: absolute;
+		}
+
+		#top-menu ul {
+			position: absolute;
+			display: none;
+		}
+
+		#navbar li:hover > ul {
+			display: block;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<div id="header">
+		<h1>Traveling</h1>
+	</div> <!-- #header -->
+
+	<div id = "navbar">
+		<ul id="top-menu">
+			<li><a href="interest.html">Home</a>
+				<ul class="sub-menu">
+					<li><a href="interest.html#section1">Berlin</a></li>
+					<li><a href="interest.html#section2">Prague</a></li>
+					<li><a href="interest.html#section3">London</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>	
+	</div> <!-- #navbar -->
+
+	<div id = "page-wrapper">
+
+		<div id = "sidebar">
+
+			<div class="sidebar-gallery">
+
+				<div class="sidebar-image">
+					<img src="img/gate.jpeg" alt="Brandenburg Gate">
+					<div class = "caption"> 
+						Brandenburg Gate 
+					</div>
+				</div>
+
+
+				<div class="sidebar-image">
+					<img src="img/castle.jpeg" alt="Prague Castle">
+					<div class = "caption"> 
+						Prague Castle 
+					</div>
+				</div>
+
+				<div class="sidebar-image">
+					<img src="img/clock.jpeg" alt="Big Ben">
+					<div class = "caption"> 
+						Big Ben 
+					</div>
+				</div>
+
+			</div>
+
+		</div> <!-- #sidebar -->
+
+		<div id="container">
+
+			<div id = "section1">
+				<h2>Berlin</h2>
+
+				<img id="berlin-wall" src="img/wall.jpg" alt="Berlin Wall">
+
+				<p>An interest of mine is traveling. This past summer, I was fortunate enough to have the incredible opportunity to study abroad in Berlin, 
+				Germany, through CIEE. In a city renowned for its contributions to renewable energy and commitment to innovation, I gained a wealth of 
+				knowledge about sustainable engineering practices. For example, Berlin’s intricate subway system, known as the 
+				U-Bahn, demonstrates how the entire city is organized around public transportation rather than cars. As I 
+				explored more stations, I learned about discreet doors and stairways leading to underground bunkers 
+				built during WWII. I was able to tour one of these underground bunkers, but I was not allowed to take 
+				photos. However, you can still find many pictures of these bunkers on the 
+				<a href="https://www.berliner-unterwelten.de/en/index.html" target="_blank" rel="noopener noreferrer">Berliner Unterwelten website.</a> </p>
+
+				<p>
+					Outside of the classroom, I visited the many famous landmarks of Berlin. The Brandenburg Gate, the 
+					Berlin Wall, the Berlin TV Tower, Checkpoint Charlie, and the Reichstag were all fun to see. I also 
+					enjoyed drinking a glass of beer at one of the city’s many beer gardens in Tempelhofer Feld. 
+					It wouldn’t be a proper visit without experiencing Berlin nightlife. One of my favorite 
+					experiences was the Berlin Icebar. A 19th-century Bremerhaven tavern-themed bar where you’re 
+					surrounded by ice. Even your shot glasses are made of ice. Finally, some dancing at the House of 
+					Weekend club was a great way to end the night.      
+				</p>
+			</div>
+
+			<div id = "section2">
+				<h3>Prague</h3>
+
+				<img id="prague" src="img/prague.jpg" alt="Prague">
+
+				<p> During my stay in Berlin, I decided to take a quick weekend trip to Prague, the Czech Republic. I 
+					took a 5-hour FlixBus across the German countryside, where I saw large patches of forest, open grass, 
+					and wind turbines. As I crossed into the Czech Republic, the scenery shifted from forests to grassy 
+					hills where wild horses roamed. Eventually, I reached Prague, where I was greeted by scenes of the 
+					Prague Castle in the distance as I crossed over the Vltava River on one of Prague’s many bridges 
+					connecting the various districts. Having been on a bus for 5 hours, I was starving. I went to a nice 
+					restaurant and enjoyed a plate of Vepřo Knedlo Zelo. A combination of roasted pork (vepřo), sliced 
+					dumplings (knedlo), and braised sauerkraut (zelo), all served together with rich gravy. Afterwards, I 
+					had a Trdelnik ice cream for dessert.    
+				</p>
+
+				<p>Walking the streets of Prague gave me a chance to admire the colorful baroque buildings and gothic 
+					churches. Upon reaching the Old Town Square, I had the chance to take pictures of the medieval 
+					Astronomical Clock, which gives an animated hourly show. On my way to Prague Castle, I crossed 
+					the Charles Bridge, lined with statues of Catholic saints. Reaching the Prague castle I took a 
+					tour of the grounds and learned about its history as the seat of power for kings of Bohemia, Holy 
+					Roman emperors, and presidents of Czechoslovakia. Finally, I visited “My People Bar” to try the 
+					unique drinking experience of wearing a soldier's helmet and taking a shot while getting hit in the 
+					head with a bat!</p>
+			</div>
+
+			<div id = "section3">
+				<h4>London</h4>
+
+				<img id="london" src="img/london.jpg" alt="London">
+
+				<p> The final stop on my Europe trip was London. While in London, I visited iconic landmarks like Big Ben, the London Eye, Buckingham Palace, 
+					and Westminster Abbey. At Westminster Abbey, I enjoyed the Sunday organ recitals played by Jean-Willy Kunz. Afterwards, I explored Chinatown 
+					to try out all the delicious food and snacks found there. Then, I found myself at the Black Dog Pub for some fish and chips before ending my 
+					day with a panoramic view of the city from the top of The Shard. The next day, I had a full English breakfast before heading over to the British 
+					Museum.</p>
+
+				<p>Some notable exhibits I saw include:</p>
+				
+				<div id="exhibit-list">
+					<ul>
+						<li>The Rosetta Stone</li>
+						<li>The Parthenon Sculptures</li>
+						<li>Bust of Ramesses the Great</li>
+						<li>Aztec Serpent</li>
+					</ul>
+				</div>
+				
+
+				<p>
+					Later, I walked around Piccadilly Circus and Soho, where I had some pizza and a doner kebab. I also did some shopping in Camden Market 
+					while paying some quick visits to Abbey Road and Station 9 3/4. Finally, my favorite part of my London visit was taking a nighttime boat 
+					tour of the city on the River Thames. Seeing the vibrant mix of illuminated landmarks and passing under Tower Bridge made for some great views.
+					I hope to visit many more countries and cities in the near future! 
+				</p>
+			</div>
+
+
+			
+
+
+		</div> <!-- #container -->
+
+	</div> <!-- #page-wrapper -->
+
+	<div id="footer">
+		University of Southern California &copy; 2026
+	</div> <!-- #footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+/* background of entire page */
+body {
+    background-color: gray;
+    margin: 0px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+
+#footer {
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    z-index: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar li {
+    position: relative;
+    background-color: black;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#navbar li:hover {
+    background-color: grey;
+}
+
+#navbar a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
