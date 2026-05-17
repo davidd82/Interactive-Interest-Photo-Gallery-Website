@@ -102,7 +102,9 @@ Contains:
 
 ## Screenshots
 
-![Database Diagram](public/img/database.png)
+![Home Page](img/database.png)
+
+![Gallery Page](img/gallery.png)
 
 
 ---
